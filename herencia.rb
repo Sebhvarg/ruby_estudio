@@ -19,5 +19,11 @@ class Perro < Animal
   end
 end
 
+class Gato < Animal
+  def initialize(nombre, color)
+    super(nombre)
+    @color = color
+  end
+
 p = Perro.new("Rocky", "Labrador")
 puts p.hablar
