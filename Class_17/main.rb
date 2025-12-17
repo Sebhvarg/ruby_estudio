@@ -78,7 +78,13 @@ programador1 = Programador.new("Karla", 20, "1101234567", "ana@example.com", "Ru
 puts programador1.imprimirMensaje
 
 #9. Incluyendo módulos
-require_relative 'calculator'
-
+BEGIN {
+  require_relative 'calculator'
+}
+END {
+  puts "Gracias por usar el calculador en Ruby!"
+}
 
 #10. Gemas
+
+require 'colorize'
